@@ -19,6 +19,16 @@ instead of cycling through them.
 
 - GNOME Shell 50 or 51
 
+## Quick Installation
+
+Run the following command in your terminal to download and install the latest release:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/TSV-Technologies/layout_switcher_gnome_extension/main/install.sh | bash
+```
+
+Note: On Wayland, log out and log back in after installation so GNOME Shell can load the extension.
+
 ## Installation
 
 1. Copy the extension directory to your local extensions folder. The directory
