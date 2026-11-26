@@ -1,0 +1,13 @@
+# Сборочные архивы расширения (gnome-extensions pack)
+*.shell-extension.zip
+*.zip
+
+# Скомпилированные схемы GSettings и переводы (если появятся)
+schemas/gschemas.compiled
+*.mo
+
+# Редакторы и ОС
+.vscode/
+.idea/
+*~
+.DS_Store
