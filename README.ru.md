@@ -29,6 +29,26 @@ curl -fsSL https://raw.githubusercontent.com/TSV-Technologies/layout_switcher_gn
 
 Примечание: В сессии Wayland после установки необходимо выйти из системы и войти снова, чтобы GNOME Shell подхватил расширение.
 
+### Быстрая проверка
+
+Чтобы быстро проверить работу расширения, выполните в терминале одну из следующих команд для переключения раскладки через D-Bus:
+
+```bash
+gdbus call --session \
+  --dest com.tsv.LayoutSwitcher \
+  --object-path /com/tsv/LayoutSwitcher \
+  --method com.tsv.LayoutSwitcher.SetLayout "ru"
+```
+
+или
+
+```bash
+gdbus call --session \
+  --dest com.tsv.LayoutSwitcher \
+  --object-path /com/tsv/LayoutSwitcher \
+  --method com.tsv.LayoutSwitcher.SetLayout "us"
+```
+
 ## Установка
 
 1. Скопируйте каталог расширения в локальную папку расширений. Имя каталога

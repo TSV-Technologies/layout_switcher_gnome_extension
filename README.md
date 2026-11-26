@@ -29,6 +29,26 @@ curl -fsSL https://raw.githubusercontent.com/TSV-Technologies/layout_switcher_gn
 
 Note: On Wayland, log out and log back in after installation so GNOME Shell can load the extension.
 
+### Quick Test
+
+To quickly verify that the extension is working, run one of the following commands in your terminal to switch the keyboard layout via D-Bus:
+
+```bash
+gdbus call --session \
+  --dest com.tsv.LayoutSwitcher \
+  --object-path /com/tsv/LayoutSwitcher \
+  --method com.tsv.LayoutSwitcher.SetLayout "ru"
+```
+
+or
+
+```bash
+gdbus call --session \
+  --dest com.tsv.LayoutSwitcher \
+  --object-path /com/tsv/LayoutSwitcher \
+  --method com.tsv.LayoutSwitcher.SetLayout "us"
+```
+
 ## Installation
 
 1. Copy the extension directory to your local extensions folder. The directory
