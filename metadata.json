@@ -1,0 +1,10 @@
+{
+  "uuid": "layout-switcher@tsv-tech",
+  "name": "Layout Switcher",
+  "description": "Switch keyboard layouts (input sources) from the command line, scripts and custom shortcuts via D-Bus.\n\nSelect an exact keyboard language instead of cycling through them: bind a separate hotkey to each layout, or switch to English automatically from your own scripts. Works with XKB layouts and IBus input methods.\n\nD-Bus API: SetLayout, GetCurrentLayout, ListLayouts. Usage examples for gdbus, busctl and Python are in the README.",
+  "shell-version": [
+    "50",
+    "51"
+  ],
+  "url": "https://github.com/TSV-Technologies/layout_switcher_gnome_extension"
+}
